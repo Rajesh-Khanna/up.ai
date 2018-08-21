@@ -48,7 +48,7 @@ File: Layout CSS
 #pageintro .heading{margin-bottom:20px; font-size:3rem;}
 #pageintro p:first-of-type{margin:0 0 20px 0; text-transform:uppercase; font-size:1.2rem; letter-spacing:5px;}
 #pageintro footer{margin-top:50px;}
-
+#pageintro .logo_up{position:relative;top:-200px;left:-200px;height:300px;width:28%;border-radius:25%;}
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
@@ -135,7 +135,7 @@ File: Layout CSS
 #footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
 #footer .contact li *{margin:0; padding:0; line-height:1.6;}
 #footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
-
+#footer .codeclub{position:relative;top:-200px;left:600px;height:200px;width:60%;border-radius:25%;z-index:2;}
 
 /* Copyright
 --------------------------------------------------------------------------------------------------------------- */
