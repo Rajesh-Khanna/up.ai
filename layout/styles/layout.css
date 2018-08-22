@@ -135,7 +135,7 @@ File: Layout CSS
 #footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
 #footer .contact li *{margin:0; padding:0; line-height:1.6;}
 #footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
-#footer .codeclub{position:relative;top:-200px;left:600px;height:200px;width:60%;border-radius:25%;z-index:2;}
+#footer .codeclub{position:relative;top:-50px;left:250px;height:500px;width:50%;border-radius:25%;z-index:2;}
 
 /* Copyright
 --------------------------------------------------------------------------------------------------------------- */
