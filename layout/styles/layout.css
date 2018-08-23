@@ -48,7 +48,8 @@ File: Layout CSS
 #pageintro .heading{margin-bottom:20px; font-size:3rem;}
 #pageintro p:first-of-type{margin:0 0 20px 0; text-transform:uppercase; font-size:1.2rem; letter-spacing:5px;}
 #pageintro footer{margin-top:50px;}
-#pageintro .logo_up{position:relative;top:-200px;left:-200px;height:300px;width:28%;border-radius:25%;}
+#pageintro .logo_up{position:relative;top:-200px;left:-200px;height:300px;width:28%;border-style: solid;
+    border-width: medium;}
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
