@@ -407,3 +407,23 @@ table a, #comments a{background-color:inherit;}
 	.font-x2{font-size:1.4rem;}
 	.font-x3{font-size:1.6rem;}
 }
+
+
+.dropdown-item{
+  white-space: normal;
+}
+
+
+.dropdown-item:hover, .dropdown-item:focus {
+  text-decoration: none;
+  background-color: #6c757d;
+}
+
+.event-links{
+	text-decoration: none;
+	color: #fff;
+}
+.event-links:hover{
+	text-decoration: none;
+	color: #990033;
+}
