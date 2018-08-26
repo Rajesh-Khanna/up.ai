@@ -1,493 +1,726 @@
 <!DOCTYPE html>
+<style>
+  .column {
+    float: left;
+    width: 50%;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .col_text {
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+
+  /* Clear floats after the columns */
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+</style>
 <html lang="">
 
 <head>
-<title>Up.ai</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <title>up.AI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 </head>
+
 <body id="top">
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- Top Background Image Wrapper -->
-<div class="bgded overlay light" style="background-image:url('images/demo/backgrounds/01.png');">
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <!-- ################################################################################################ -->
-  <div class="wrapper row1" style="position : fixed;">
-    <header id="header" class="hoc clear">
-      <!-- ################################################################################################ -->
-      <div id="logo" class="fl_left">
-        <h1><a href="index.html">Up.ai</a></h1>
-      </div>
-      <nav id="mainav" class="fl_right">
-        <ul class="clear">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#SCHEDULE">Schedule</a></li>
-          <li><a href="#Abouttheevents">Events</a></li>
-          <li><a href="#Organisingpeople">Organizers</a></li>
-          <li><a href="#ContactUs">Contact us</a></li>
-          <li><a class="drop" href="#">Pages</a>
-            <ul>
-              <li><a href="pages/gallery.html">Gallery</a></li>
-              <li><a href="#">Full Width</a></li>
-              <li><a href="#">Sidebar Left</a></li>
-            </ul>
-          </li>
+  <!-- Top Background Image Wrapper -->
+  <div class="bgded overlay light" style="background-image:url('images/rsz_b1.jpg');">
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+        <!-- ################################################################################################ -->
+        <div id="logo" class="fl_left">
+          <img href="index.html" src="images/rsz_39594166_1161549937340736_4511167939566632960_n.png">
+          <!-- <h1><a href="index.html">Up.ai</a></h1> -->
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#SCHEDULE">Schedule</a>
+            </li>
+            <li>
+              <a href="#Abouttheevents">Events</a>
+            </li>
+            <li>
+              <a href="#Organisingpeople">Organizers</a>
+            </li>
+            <li>
+              <a href="#ContactUs">Contact us</a>
+            </li>
+            <li>
+              <a class="drop" href="#">Pages</a>
+              <ul>
+                <li>
+                  <a href="pages/gallery.html">Gallery</a>
+                </li>
 
-        </ul>
-      </nav>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div id="pageintro" class="hoc clear">
       <!-- ################################################################################################ -->
-    </header>
+      <article>
+        <h3 class="heading">AI for Social Good</h3>
+        <!-- <footer>
+          <ul class="nospace inline pushright">
+            <li>
+              <a class="btn" href="#">Register</a>
+            </li>
+            <li>
+              <a class="btn inverse" href="#">Sign In</a>
+            </li>
+          </ul>
+        </footer> -->
+      </article>
+      <!-- <img src="images/logo.png" class="logo_up"> -->
+      <!-- ################################################################################################ -->
+    </div>
+    <!-- ################################################################################################ -->
+
+  </div>
+  <!-- End Top Background Image Wrapper -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <!-- <div >
+      <h6 class="heading">Our world faces numerous challenges like diseases, natural disasters, illiteracy, low-crop yields etc. We are hopeful that Artificial Intelligence can provide an answer to many of these problems and raise the status quo of the society. Deep Learning has shown massive potential to extract useful patterns from massive amount of data, patterns that can be immensely useful for our society. So come join us and help us build an AI powered India.</h6>
+    </div> -->
+      <article class="group">
+        <div class="one_half first">
+          <h6 class="heading" align="center">About the hackathon</h6>
+          <p>Our world faces numerous challenges like diseases, natural disasters, illiteracy, low-crop yields etc. We are hopeful
+            that Artificial Intelligence can provide an answer to many of these problems and raise the status quo of the
+            society. Deep Learning has shown massive potential to extract useful patterns from massive amount of data, patterns
+            that can be immensely useful for our society. So come join us and help us build an AI powered India.</p>
+        </div>
+      </article>
+      <h6 class="heading" align="center">Events</h6>
+      <div class="row">
+        <div class="column">
+          <img src="images/rsz_1workshop.png" height="400" width="500">
+        </div>
+        <div class="column">
+          <img src="images/rsz_1challenge.jpg" height="400" width="500">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col_text">
+          <h6 class="heading font-x1" align="center">up.AI Workshop</h6>
+        </div>
+        <div class="col_text">
+          <h6 class="heading font-x1" align="center">up.AI Challenge</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col_text">
+          <p>A two day workshop tailored to acquaint the participants with relevant state of the art techniques in the field
+            of artificial intelligence that would help them put their ideas to practice for the up.AI Challenge.</p>
+        </div>
+        <div class="col_text">
+          <p> The participants are invited to form teams of size three and submit
+              project proposals in the aforesaid domains. 10 projects are selected for incubation
+              during the winter vacation under the mentorship of interested professors, PhD students and
+              industry-experts to convert the ideas into deployable solutions.
+              </p>
+        </div>
+      </div>
+      <!-- ################################################################################################ -->
+      <!-- / main body -->
+      <div class="clear"></div>
+    </main>
   </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div id="pageintro" class="hoc clear">
-    <!-- ################################################################################################ -->
-    <article>
-      <h3 class="heading">Register now to participate!</h3>
-      <footer>
-        <ul class="nospace inline pushright">
-          <li><a class="btn" href="#">Register</a></li>
-          <li><a class="btn inverse" href="#">Sign In</a></li>
-        </ul>
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div style="background-color: powderblue">
+    <section class="hoc container clear">
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle">
+        <h6 class="heading" style="color: white">Guests Speakers</h6>
+        <p>Nec faucibus nisi fusce ultricies mi non mattis mollis velit</p>
+      </div>
+      <div class="group latest">
+        <article class="one_third first">
+          <a class="imgover btmspace-30" href="#">
+            <img src="images/demo/320x240.png" alt="">
+          </a>
+          <h6 class="heading font-x1">Speaker 1</h6>
+          <p>Aliquet erat nisi in nisi in vel porttitor leo proin eget volutpat lorem donec a ipsum nunc dui enim sollicitudin
+            eget&hellip;
+          </p>
+          <footer>
+            <a href="#">Read More</a>
+          </footer>
+        </article>
+        <article class="one_third">
+          <a class="imgover btmspace-30" href="#">
+            <img src="images/demo/320x240.png" alt="">
+          </a>
+          <h6 class="heading font-x1">Speaker 2</h6>
+          <p>Sit amet libero nam gravida eros eget quam porttitor iaculis phasellus ultrices turpis sapien mauris tortor pulvinar&hellip;</p>
+          <footer>
+            <a href="#">Read More</a>
+          </footer>
+        </article>
+        <article class="one_third">
+          <a class="imgover btmspace-30" href="#">
+            <img src="images/demo/320x240.png" alt="">
+          </a>
+          <h6 class="heading font-x1">Speaker 3</h6>
+          <p>Consequat ante duis non lobortis urna integer vehicula ex non ante ultricies maximus sed tempus felis non enim&hellip;</p>
+          <footer>
+            <a href="#">Read More</a>
+          </footer>
+        </article>
+      </div>
+      <footer class="center">
+        <a class="btn" href="#">More speakers &raquo;</a>
       </footer>
-    </article>
-    <img src="images/logo.png" class="logo_up">
-    <!-- ################################################################################################ -->
+      <!-- ################################################################################################ -->
+    </section>
   </div>
   <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
 
-</div>
-<!-- End Top Background Image Wrapper -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row3">
-  <main class="hoc container clear">
-    <!-- main body -->
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="heading"><i>Good things come to people who wait but better things come to people who go out and get them!</i></h6>
-    </div>
-    <article class="group">
-      <div class="one_half first">
-        <h6 class="heading">About the hackathon</h6>
-        <p>Hendrerit nisl et euismod quam semper eget vel viverra nibh phasellus accumsan mauris elit eget fringilla dolor aliquet id etiam interdum non eros sagittis hendrerit cras ac lectus ut arcu bibendum tincidunt eget id nisl ut.</p>
-        <p class="btmspace-30">Iaculis vehicula tristique ut gravida scelerisque mattis non erat a lectus tincidunt maximus aliquam sed ex quis nec maximus urna integer nec est sapien quisque pulvinar bibendum interdum donec a lacus diam cras sem ipsum finibus non volutpat nec&hellip;</p>
-        <footer><a class="btn" href="#">Read More &raquo;</a><br>
-		IT WILL BE FOLLOWED BY SCHEDULE<br></footer>
+  <div class="wrapper row3">
+    <main class="hoc container clear">
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle" id="SCHEDULE">
+        <h6 class="heading">
+          <i>SCHEDULE</i>
+        </h6>
       </div>
-      
-    </article>
-    <!-- ################################################################################################ -->
-    <!-- / main body -->
-    <div class="clear"></div>
-  </main>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper">
-  <section class="hoc container clear"> 
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="heading">Guests Speakers</h6>
-      <p>Nec faucibus nisi fusce ultricies mi non mattis mollis velit</p>
-    </div>
-    <div class="group latest">
-      <article class="one_third first"><a class="imgover btmspace-30" href="#"><img src="images/demo/320x240.png" alt=""></a>
-        <h6 class="heading font-x1">Speaker 1</h6>
-        <p>Aliquet erat nisi in nisi in vel porttitor leo proin eget volutpat lorem donec a ipsum nunc dui enim sollicitudin eget&hellip;</p>
-        <footer><a href="#">Read More</a></footer>
-      </article>
-      <article class="one_third"><a class="imgover btmspace-30" href="#"><img src="images/demo/320x240.png" alt=""></a>
-        <h6 class="heading font-x1">Speaker 2</h6>
-        <p>Sit amet libero nam gravida eros eget quam porttitor iaculis phasellus ultrices turpis sapien mauris tortor pulvinar&hellip;</p>
-        <footer><a href="#">Read More</a></footer>
-      </article>
-      <article class="one_third"><a class="imgover btmspace-30" href="#"><img src="images/demo/320x240.png" alt=""></a>
-        <h6 class="heading font-x1">Speaker 3</h6>
-        <p>Consequat ante duis non lobortis urna integer vehicula ex non ante ultricies maximus sed tempus felis non enim&hellip;</p>
-        <footer><a href="#">Read More</a></footer>
-      </article>
-    </div>
-    <footer class="center"><a class="btn" href="#">More speakers &raquo;</a></footer>
-    <!-- ################################################################################################ -->
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-<div class="wrapper row3">
-  <main class="hoc container clear">
-    <!-- main body -->
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle" id="SCHEDULE">
-      <h6 class="heading"><i>SCHEDULE</i></h6>
-    </div>
 
 
-    <div class="container">
-      <center>
-        <h5>Workshop</h5>
-        <ul class="nav justify-content-center">
-          <li class="nav-item w-50 dropdown bg-dark ">
-            <a class="nav-link dropdown-toggle text-white " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">8th September  </a>
-            <div class="dropdown-menu w-100 bg-dark">
-              <a class="dropdown-item text-white" href="#">
-                <div class="row">
+      <div class="container">
+        <center>
+          <h5>Workshop</h5>
+          <ul class="nav justify-content-center">
+            <li class="nav-item w-50 dropdown bg-dark ">
+              <a class="nav-link dropdown-toggle text-white " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">8th September </a>
+              <div class="dropdown-menu w-100 bg-dark">
+                <a class="dropdown-item text-white" href="#">
+                  <div class="row">
                     <div class="col-4">9:00 - 9:30</div>
                     <div class="col"> Introductory Speech </div>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-white" href="#">
-                <div class="row">
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-white" href="#">
+                  <div class="row">
                     <div class="col-4">9:30 - 10:15</div>
                     <div class="col-8">Speech by Director, IIT KGP(tentative) and Prof. Sudeshna Sarkar(HoD, CSE) on "AI for Social Cause"</div>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-white" href="#">
-                <div class="row">
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-white" href="#">
+                  <div class="row">
                     <div class="col-4">10:15 - 11:00</div>
                     <div class="col">Talk by Wadhwani AI </div>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item text-white">
-                <div class="row">
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">14:00 - 17:00</div>
                     <div class="col">Intel AI Academy</div>
-                </div>
-              </a>
-            </div>
-          </li>
-          <li class="nav-item w-50 dropdown bg-dark">
-            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">9th September  </a>
-            <div class="dropdown-menu w-100 bg-dark">
-              <div class="dropdown-item text-white">
-                <div class="row">
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item w-50 dropdown bg-dark">
+              <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">9th September </a>
+              <div class="dropdown-menu w-100 bg-dark">
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">9:00 - 12:00</div>
                     <div class="col-8">
                       <ul>
                         <li>
                           Domain 1(Healthcare)
                           <ul>
-                             <a href="#" class="event-links"> <li>Talk by Placeholder 2 </li> </a>
-                            <a href="#" class="event-links"> <li>Talk by Prof. Debdeep Sheet</li> </a>
-                            <a href="#" class="event-links"> <li>Spotlight Session</li> </a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Placeholder 2 </li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Prof. Debdeep Sheet</li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Spotlight Session</li>
+                            </a>
                           </ul>
                         </li>
                         <li>
                           Domain 2(Industrial AI)
                           <ul>
-                            <a href="#" class="event-links"> <li>Talk by Placeholder 3</li> </a>
-                            <a href="#" class="event-links"> <li>Talk by Placeholder 4</li></a>
-                            <a href="#" class="event-links"> <li>Spotlight Session</li></a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Placeholder 3</li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Placeholder 4</li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Spotlight Session</li>
+                            </a>
                           </ul>
                         </li>
                       </ul>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item text-white">
-                <div class="row">
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">9:00 - 12:00</div>
                     <div class="col-8">
                       <ul>
                         <li>
                           Domain 3(Education)
                           <ul>
-                            <a href="#" class="event-links"> <li>Talk by Placeholder 5</li></a>
-                            <a href="#" class="event-links"> <li>Talk by Placeholder KGP</li></a>
-                            <a href="#" class="event-links"> <li>Spotlight Session</li></a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Placeholder 5</li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Placeholder KGP</li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Spotlight Session</li>
+                            </a>
                           </ul>
                         </li>
                         <li>
                           Domain 4(Agriculture and Environment)
                           <ul>
-                            <a href="#" class="event-links"> <li>Talk by Placeholder 6</li></a>
-                            <a href="#" class="event-links"> <li>Talk by Placeholder KGP</li></a>
-                            <a href="#" class="event-links"> <li>Spotlight Session</li></a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Placeholder 6</li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Talk by Placeholder KGP</li>
+                            </a>
+                            <a href="#" class="event-links">
+                              <li>Spotlight Session</li>
+                            </a>
                           </ul>
                         </li>
                       </ul>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <div class="dropdown-divider"></div>
+                <div class="dropdown-divider"></div>
 
-              <div class="dropdown-item text-white">
-                <div class="row">
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">15 October - 30 December</div>
                     <div class="col-8">
                       <ul>
-                        <a href="#" class="event-links"> <li>Panel discussion with invited guests</li></a>
-                        <a href="#" class="event-links"> <li>Announcement of ideation and incubation contest</li></a>
-                        <a href="#" class="event-links"> <li>Submission portal opens for the ideation and incubation contest</li></a>
+                        <a href="#" class="event-links">
+                          <li>Panel discussion with invited guests</li>
+                        </a>
+                        <a href="#" class="event-links">
+                          <li>Announcement of ideation and incubation contest</li>
+                        </a>
+                        <a href="#" class="event-links">
+                          <li>Submission portal opens for the ideation and incubation contest</li>
+                        </a>
                       </ul>
                     </div>
+                  </div>
                 </div>
-              </div>
 
-            </div>
-          </li>
-        </ul>
-      </center>
-    </div>
-    <div class="container">
-      <center>
-        <h5>Challenge</h5>
-        <ul class="nav justify-content-center">
-          <li class="nav-item w-100 dropdown bg-dark ">
-            <a class="nav-link dropdown-toggle text-white " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Timeline  </a>
-            <div class="dropdown-menu w-100 bg-dark">
-              <div class="dropdown-item text-white">
-                <div class="row">
+              </div>
+            </li>
+          </ul>
+        </center>
+      </div>
+      <div class="container">
+        <center>
+          <h5>Challenge</h5>
+          <ul class="nav justify-content-center">
+            <li class="nav-item w-100 dropdown bg-dark ">
+              <a class="nav-link dropdown-toggle text-white " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Timeline </a>
+              <div class="dropdown-menu w-100 bg-dark">
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">7 October</div>
                     <div class="col-8">
                       <ul>
-                        <a href="#" class="event-links"> <li></a>
-                          Submission portal closes
+                        <a href="#" class="event-links">
+                          <li>
+                        </a>
+                        Submission portal closes
                         </li>
                       </ul>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item text-white">
-                <div class="row">
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">8-12 October</div>
                     <div class="col-8">
                       <ul>
-                        <a href="#" class="event-links"> <li>Selection of 10 projects for incubation</li></a>
-                        <a href="#" class="event-links"> <li>Adoption of projects by the sponsors </li></a>
-                        <a href="#" class="event-links"> <li>Assignment of professors and graduate students for mentorship</li></a>
+                        <a href="#" class="event-links">
+                          <li>Selection of 10 projects for incubation</li>
+                        </a>
+                        <a href="#" class="event-links">
+                          <li>Adoption of projects by the sponsors </li>
+                        </a>
+                        <a href="#" class="event-links">
+                          <li>Assignment of professors and graduate students for mentorship</li>
+                        </a>
                       </ul>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item text-white">
-                <div class="row">
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">13 October</div>
-                    <div class="col-8"><ul>
-                      <a href="#" class="event-links"> <li>
-                      Announcement of results for the ideation and incubation contest
-                      </li></a>
+                    <div class="col-8">
+                      <ul>
+                        <a href="#" class="event-links">
+                          <li>
+                            Announcement of results for the ideation and incubation contest
+                          </li>
+                        </a>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item text-white">
-                <div class="row">
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">15 October - 30 December</div>
                     <div class="col-8">
                       <ul>
                         <li>Incubation</li>
                       </ul>
                     </div>
+                  </div>
                 </div>
-              </div>
-              <div class="dropdown-divider"></div>
-              <div class="dropdown-item text-white">
-                <div class="row">
+                <div class="dropdown-divider"></div>
+                <div class="dropdown-item text-white">
+                  <div class="row">
                     <div class="col-4">First Week of January 2019</div>
                     <div class="col-8">
                       <ul>
-                        <a href="#" class="event-links"> <li>
-                          Online (and Offline?) Showcase of incubated projects on the official up.AI YouTube Channel
-                        </li></a>
+                        <a href="#" class="event-links">
+                          <li>
+                            Online (and Offline?) Showcase of incubated projects on the official up.AI YouTube Channel
+                          </li>
+                        </a>
                       </ul>
                     </div>
+                  </div>
                 </div>
-              </div>
 
-            </div>
+              </div>
+            </li>
+            </ul>
+        </center>
+      </div>
+
+
+  </div>
+  <div class="clear"></div>
+  <br>
+  <br>
+  <br>
+  <br>
+  </main>
+  </div>
+
+  <div style="background-color: powderblue">
+    <section class="hoc container clear">
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle" id="Organisingpeople">
+        <h6 class="heading" style="color: white">Organisers</h6>
+      </div>
+      <div class="group team">
+        <figure class="one_quarter first">
+          <a class="imgover" href="#">
+            <img src="images/rsz_3anirban.jpg" alt="">
+          </a>
+          <figcaption>
+            <h6 class="heading">Anirban Santara</h6>
+            <em>Google Ph.D Fellow</em>
+            <footer>
+              <ul class="faico clear">
+                <li>
+                  <a class="faicon-twitter" href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-linkedin" href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-google-plus" href="#">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </figcaption>
+        </figure>
+        <figure class="one_quarter">
+          <a class="imgover" href="#">
+            <img src="images/rsz_tanay.jpg" alt="">
+          </a>
+          <figcaption>
+            <h6 class="heading">Tanay Bhartia</h6>
+            <em>President, Codeclub</em>
+            <footer>
+              <ul class="faico clear">
+                <li>
+                  <a class="faicon-twitter" href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-linkedin" href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-google-plus" href="#">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </figcaption>
+        </figure>
+        <figure class="one_quarter">
+          <a class="imgover" href="#">
+            <img src="images/sibby.jpg" alt="">
+          </a>
+          <figcaption>
+            <h6 class="heading">Siddharth Jain</h6>
+            <em>President, Codeclub</em>
+            <footer>
+              <ul class="faico clear">
+                <li>
+                  <a class="faicon-twitter" href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-linkedin" href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-google-plus" href="#">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </figcaption>
+        </figure>
+        <figure class="one_quarter">
+          <a class="imgover" href="#">
+            <img src="images/rsz_1krushna.jpg" alt="">
+          </a>
+          <figcaption>
+            <h6 class="heading">Krushna Gaurkar</h6>
+            <em>Finance Head, Codeclub</em>
+            <footer>
+              <ul class="faico clear">
+                <li>
+                  <a class="faicon-twitter" href="#">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-linkedin" href="#">
+                    <i class="fa fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a class="faicon-google-plus" href="#">
+                    <i class="fa fa-google-plus"></i>
+                  </a>
+                </li>
+              </ul>
+            </footer>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+
+  <div class="wrapper row3">
+    <figure class="hoc container clear clients">
+      <h6 class="heading" align="center">SPONSORS</h6>
+      <!-- ################################################################################################ -->
+      <ul class="nospace group">
+        <li class="one_quarter first">
+          <a class="imgover" href="#">
+            <img src="images/demo/222x100.png" alt="">
+          </a>
+        </li>
+        <li class="one_quarter">
+          <a class="imgover" href="#">
+            <img src="images/Intel-logo.png" alt="">
+          </a>
+        </li>
+        <li class="one_quarter">
+          <a class="imgover" href="#">
+            <img src="images/capillary.png" alt="">
+          </a>
+        </li>
+        <li class="one_quarter">
+          <a class="imgover" href="#">
+            <img src="images/demo/222x100.png" alt="">
+          </a>
+        </li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </figure>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div style="background-color: powderblue">
+    <section class="hoc cta clear">
+      <!-- ################################################################################################ -->
+      <div class="sectiontitle" id="ContactUs">
+        <h6 class="heading" style="color: white">Contact Us</h6>
+        <p>If you want to know more about up.AI, just submit your e-mail address.</p>
+      </div>
+      <form action="https://formspree.io/codeclub.iitkgp@gmail.com" method="POST">
+        <fieldset>
+          <legend>Newsletter:</legend>
+          </button>
+          <input class="btmspace-15" id="email" type="email" name="_replyto" placeholder="Enter Your Email Here&hellip;">
+          <input id="textarea" type="text" class="btmspace-15" name="message" placeholder="Enter Your message&hellip;"></input>
+          <button type="submit" value="submit" name="submit">Submit</button>
+        </fieldset>
+      </form>
+      <!-- ################################################################################################ -->
+    </section>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4">
+    <footer id="footer" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <article class="one_quarter first">
+        <h6 class="heading">About CodeClub</h6>
+
+        <p>At CodeClub, we believe in pulling out the most efficient of a group and best of an individual. Workshops, guest
+          lectures and coding competitions are few among the vast list of events we organise. &hellip;</p>
+        <p class="nospace">
+          <a href="https://rajesh-khanna.github.io/CC-page2/home/index.html">Read More</a>
+        </p>
+      </article>
+      <div class="one_quarter">
+        <h6 class="heading">CodeClub Contacts</h6>
+        <ul class="nospace btmspace-30 linklist contact">
+          <li>
+            <i class="fa fa-map-marker"></i>
+            <address>
+              Department of Computer Science &amp; Engineering, IIT Kharagpur.
+            </address>
+          </li>
+          <li>
+            <i class="fa fa-envelope-o"></i> codeclub.iitkgp@gmail.com</li>
+        </ul>
+        <ul class="faico clear">
+          <li>
+            <a class="faicon-facebook" href="#">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="faicon-twitter" href="#">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="faicon-dribble" href="#">
+              <i class="fa fa-dribbble"></i>
+            </a>
+          </li>
+          <li>
+            <a class="faicon-linkedin" href="#">
+              <i class="fa fa-linkedin"></i>
+            </a>
           </li>
         </ul>
-      </center>
-    </div>
+      </div>
+      <img src="images/codeclub.png" class="codeclub">
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
 
-
-    </div>
-    <div class="clear"></div>
-    <br>
-    <br>
-    <br>
-    <br>
-  </main>
-</div>
-
-<div class="wrapper row2 bgded overlay" style="background-image:url('images/demo/backgrounds/03.png');">
-  <section class="hoc container clear">
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle" id="Organisingpeople">
-      <h6 class="heading">Organising people</h6>
-      <p>Magnis dis parturient montes nascetur ridiculus mus sed in dui</p>
-    </div>
-    <div class="group team">
-      <figure class="one_quarter first"><a class="imgover" href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">A. Doe</h6>
-          <em>Director</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </footer>
-        </figcaption>
-      </figure>
-      <figure class="one_quarter"><a class="imgover" href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">B. Doe</h6>
-          <em>Chairman</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </footer>
-        </figcaption>
-      </figure>
-      <figure class="one_quarter"><a class="imgover" href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">C. Doe</h6>
-          <em>Head of Design</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </footer>
-        </figcaption>
-      </figure>
-      <figure class="one_quarter"><a class="imgover" href="#"><img src="images/demo/320x320.png" alt=""></a>
-        <figcaption>
-          <h6 class="heading">D. Doe</h6>
-          <em>Head of Marketing</em>
-          <footer>
-            <ul class="faico clear">
-              <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
-            </ul>
-          </footer>
-        </figcaption>
-      </figure>
-    </div>
-
-    <!-- ################################################################################################ -->
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-<div class="wrapper row3">
-  <figure class="hoc container clear clients"> 
-    <h6 class="heading" align="center">SPONSORS</h6>
-    <!-- ################################################################################################ -->
-    <ul class="nospace group">
-      <li class="one_quarter first"><a class="imgover" href="#"><img src="images/demo/222x100.png" alt=""></a></li>
-      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/222x100.png" alt=""></a></li>
-      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/222x100.png" alt=""></a></li>
-      <li class="one_quarter"><a class="imgover" href="#"><img src="images/demo/222x100.png" alt=""></a></li>
-    </ul>
-    <!-- ################################################################################################ -->
-  </figure>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row2 bgded overlay" style="background-image:url('images/demo/backgrounds/04.png');">
-  <section class="hoc cta clear">
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle" id="ContactUs">
-      <h6 class="heading">Contact Us</h6>
-      <p>If you want to know more about up.AI, just submit your e-mail address.</p>
-    </div>
-      <form action="https://formspree.io/codeclub.iitkgp@gmail.com" method="POST">
-      <fieldset>
-        <legend>Newsletter:</legend>
-    </button>
-        <input class="btmspace-15" id="email" type="email" name="_replyto" placeholder="Enter Your Email Here&hellip;">
-        <input  id="textarea" type="text" class="btmspace-15" name="message"  placeholder="Enter Your message&hellip;"></input>
-        <button type="submit" value="submit" name="submit">Submit</button>
-      </fieldset>
-    </form>
-    <!-- ################################################################################################ -->
-  </section>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row4">
-  <footer id="footer" class="hoc clear">
-    <!-- ################################################################################################ -->
-    <article class="one_quarter first">
-      <h6 class="heading">About CodeClub</h6>
-
-      <p>At CodeClub, we believe in pulling out the most efficient of a group and best of an individual. Workshops, guest lectures and coding competitions are few among the vast list of events we organise. &hellip;</p>
-      <p class="nospace"><a href="https://rajesh-khanna.github.io/CC-page2/home/index.html">Read More</a></p>
-    </article>
-    <div class="one_quarter">
-      <h6 class="heading">CodeClub Contacts</h6>
-      <ul class="nospace btmspace-30 linklist contact">
-        <li><i class="fa fa-map-marker"></i>
-          <address>
-          Department of Computer Science &amp; Engineering, IIT Kharagpur.
-          </address>
-        </li>
-        <li><i class="fa fa-envelope-o"></i> codeclub.iitkgp@gmail.com</li>
-      </ul>
-      <ul class="faico clear">
-        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-        <li><a class="faicon-dribble" href="#"><i class="fa fa-dribbble"></i></a></li>
-        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
-    </div>
-    <img src="images/codeclub.png" class="codeclub">
-    <!-- ################################################################################################ -->
-  </footer>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
-<!-- JAVASCRIPTS -->
-<script src="layout/scripts/jquery.min.js"></script>
-<script src="layout/scripts/jquery.backtotop.js"></script>
-<script src="layout/scripts/jquery.mobilemenu.js"></script>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <a id="backtotop" href="#top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+  <!-- JAVASCRIPTS -->
+  <script src="layout/scripts/jquery.min.js"></script>
+  <script src="layout/scripts/jquery.backtotop.js"></script>
+  <script src="layout/scripts/jquery.mobilemenu.js"></script>
 </body>
+
 </html>
