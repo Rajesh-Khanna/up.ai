@@ -127,8 +127,12 @@
 #footer .contact.linklist li, #footer .contact.linklist li:last-child{position:relative; padding-left:40px;}
 #footer .contact li *{margin:0; padding:0; line-height:1.6;}
 #footer .contact li i{display:block; position:absolute; top:0; left:0; width:30px; font-size:16px; text-align:center;}
+@media only screen and (min-width: 900px) {
 #footer .codeclub{position:relative;top:-50px;left:250px;height:400px;width:40%;border-radius:25%;z-index:2;}
-
+}
+@media only screen and (max-width: 900px) {
+#footer .codeclub{border-radius:25%;}
+}
 
 
 /* Navigation
