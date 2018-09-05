@@ -70,7 +70,7 @@
 .team > figure:last-child{margin-bottom:0;}/* Used when elements stack in smaller viewports */
 .team figure figcaption{padding-top:15px; text-align:center;}
 .team figure figcaption *{margin:0;}
-.team figure figcaption .heading{margin-bottom:8px; font-size:1.2rem;}
+.team figure figcaption .heading{margin-bottom:8px; font-size:1.2rem; font-family:helvetica;}
 .team figure figcaption em{display:block; font-size:.8rem; font-style:normal;}
 .team figure figcaption footer{margin-top:15px;}
 .team figure figcaption footer .faico li{margin:0 1px;}
@@ -116,7 +116,7 @@
 --------------------------------------------------------------------------------------------------------------- */
 #footer{padding:80px 0;}
 
-#footer .heading{margin-bottom:50px; font-size:1.2rem;}
+#footer .heading{margin-bottom:50px; font-size:1.2rem; font-family:helvetica;}
 
 #footer .linklist li{display:block; margin-bottom:15px; padding:0 0 15px 0; border-bottom:1px solid;}
 #footer .linklist li:last-child{margin:0; padding:0; border:none;}
@@ -173,7 +173,7 @@ nav ul, nav ol{margin:0; padding:0; list-style:none;}
 #breadcrumb li a::after{top:3px; right:0; content:"\f101";}
 #breadcrumb li:last-child a{margin:0; padding:0;}
 #breadcrumb li:last-child a::after{display:none;}
-#breadcrumb .heading{margin:0; font-size:1.6rem;}
+#breadcrumb .heading{margin:0; font-size:1.6rem; font-family:helvetica;}
 
 /* Sidebar Navigation */
 .sidebar nav{display:block; width:100%;}
@@ -268,7 +268,7 @@ input:focus, textarea:focus, *:required:focus{border-color:#330066;}
 .row4{color:#7A7A7A; background-color:#F7F7F7;}
 .row5, .row5 a{color:#7A7A7A; background-color:#FFFFFF;}
 
-.row3 .heading, .row4 .heading{color:#121212;}
+.row3 .heading, .row4 .heading{color:#121212; font-family:helvetica;}
 
 
 /* Top Bar */
@@ -390,7 +390,7 @@ table a, #comments a{background-color:inherit;}
 	#header #logo{margin:0 0 15px 0;}
 
 	#pageintro article{max-width:none; text-align:left;}
-	#pageintro .heading{font-size:2rem;}
+	#pageintro .heading{font-size:2rem; font-family:helvetica;}
 
 	.sectiontitle{max-width:none;}
 
