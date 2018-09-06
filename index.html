@@ -15,12 +15,24 @@
     text-align: center;
   }
 
+  .col_new {
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+
   /* Clear floats after the columns */
 
   .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+
+  .row_new {
+    display: table;
+    clear: both;
+    border: groove;
   }
 </style>
 <html lang="">
@@ -168,11 +180,38 @@
     <main class="hoc container clear">
     	<h6 class="heading" align="center" id="abouttheevents" style="font-family: Proza Libre; color: black;">Fly High with AI</h6>
       <div class="row">
+        <div class="col" align="center">
+          <img src="images/inteltop.png" height="400" width="500">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <br>
+          <h6 class="heading font-x1" align="center" style="font-family: helvetica; color: black;">Intel AI DevJam	</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <!-- <p>A two day workshop tailored to acquaint the participants with relevant state of the art techniques in the field
+            of artificial intelligence that would help them put their ideas to practice for the up.AI Challenge.</p> -->
+          <p style="font-family: Roboto; color: black;" align="center">A workshop organised by Intel.
+          </p>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="col">
+          <center>
+            <a href="https://docs.google.com/forms/d/13X3wBhnO1R-Sr3AHa3E70d1iz1qGXiCyB8Lol58qSuA/viewform?edit_requested=true"
+              type="submit" value="submit" class="btn text-light" name="submit" target="submit">Submit Spotlight Presentation</a>
+          </center>
+        </div>
+      </div> -->
+      <div class="row">
         <div class="column">
-          <img src="images/networking-teachers.jpg" height="400" width="500">
+          <img src="images/networktop.png" height="400" width="500">
         </div>
         <div class="column">
-          <img src="images/brain.png" height="400" width="500">
+          <img src="images/braintop.png" height="400" width="500">
         </div>
       </div>
       <div class="row">
@@ -712,15 +751,14 @@
       <div class="sectiontitle" id="Organisingpeople">
         <h6 class="heading" style="font-family: Proza Libre; color: black;">Organisers</h6>
       </div>
-      <div class="row">
-        <div class="col-1">
+      <div class="row" >
+        <div class="col_new">
+          <img src="images/iitkgplogo.png.png" class "rounded" alt="iit kgp">
         </div>
-        <div class="col-1">
-          <img src="images/log.png" class "rounded" alt="iit kgp">
-        </div>
-        <div class="col">
-          <div class="text-dark h3 ">Department of Computer Science and Engineering, IIT Kharagpur</div>
-          <div class="text-dark h3 ">Center of Excellence in Artificial Intelligence, IIT Kharagpur</div>
+        <div class="col" align="center">
+        	<br>
+          <div class="text-dark h3 " align="center">Department of Computer Science and Engineering, IIT Kharagpur</div>
+          <div class="text-dark h3 " align="center">Center of Excellence in Artificial Intelligence, IIT Kharagpur</div>
         </div>
       </div>
       <br>
@@ -754,7 +792,7 @@
             1997jainsid@gmail.com
           </div>
         </div>
-        <div class="row mb-3">
+        <div class="row mb-2">
           <div class="col-4">
 
           </div>
@@ -765,7 +803,7 @@
         </div>
         <div class="row mb-2">
           <div class="col-4 font-weight-bold">
-            Board Member
+
           </div>
           <div class=" col-4">Krushna Gaurkar</div>
           <div class="col-4 small">
